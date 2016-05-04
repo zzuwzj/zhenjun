@@ -19,3 +19,22 @@ function sendEmail(mailAddr, subject, content) {
     var win = window.open(url);
     win.close();
 }
+
+$(function() {
+    $("#popup").dialog({
+        autoOpen: false,
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+        hide: {
+            effect: "explode",
+            duration: 1000
+        }
+    });
+    $('.resume').on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $("#popup").dialog("open");
+    });
+})();

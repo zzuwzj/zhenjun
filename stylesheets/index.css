@@ -1,5 +1,6 @@
 .imgSH {
     float: right;
+    max-width: 80%;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -7,4 +8,12 @@
 
 .selfIntro {
     overflow: hidden;
+}
+
+.ui-dialog-titlebar-close.ui-state-default,
+.ui-dialog-titlebar-close.ui-state-hover {
+    outline: none;
+    // background: none;
+    border: none;
+    color: gray;
 }
